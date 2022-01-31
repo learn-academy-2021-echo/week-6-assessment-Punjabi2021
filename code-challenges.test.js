@@ -35,6 +35,8 @@ const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
 // Expected output: [ 2, 1, -1 ]
 
 
+i need a if and statment here
+
 // b) Create the function that makes the test pass.
 
 
