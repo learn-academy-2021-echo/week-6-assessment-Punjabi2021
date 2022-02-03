@@ -10,7 +10,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 Your answer: (modle . update) then insert the correct information
 
-Researched answer:
+Researched answer:db:migrate
 
 2. Which RESTful routes must always be passed params? Why?
 
@@ -26,18 +26,31 @@ Researched answer:rails db:migrate-In order to run your tests, your test databas
 
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
-action: "GET" route: /students
-
+action: "GET" route: /students  
+GET will show the index- show all or -show one name at a time
 action: "POST" route: /students
-
+POST will create -adding new content
 action: "GET" route: /students/new
-
+GET will let you retrieve a new form or -edit form.
 action: "GET" route: /students/2
-
+GET will show the student 2 index- show all or -show one name at a time
 action: "GET" route: /students/2/edit
-
+GET will let you retrieve and edit student 2 form.
 action: "PATCH" route: /students/2
-
+PATCH will allow you to update student 2
 action: "DELETE" route: /students/2
+DELETE will remove content from student 2
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
+
+1)I took an amazing sunset picture
+2)I don't have a way to transmit images quickly to my grandma
+3)I want to show my grandma the sunset.
+4)she's in India
+5)I'm in America
+6)she's unsure she wants to have a profile
+7)I ask her how will she see the pictures of baby Pavan
+8)she said privacy can be sacrificed in exchange for connivance
+9)we both sign up for facebook
+10)We are connected through facebook
+11)Now grandma is watching her greatgrandson grow up on facebook
