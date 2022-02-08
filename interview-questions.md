@@ -10,7 +10,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 Your answer: (modle . update) then insert the correct information
 
-Researched answer:db:migrate
+Researched answer:Running the db:migrate command also invokes the db:schema:dump command, which will update your db/schema.rb file to match the structure of your database.
 
 2. Which RESTful routes must always be passed params? Why?
 

@@ -21,6 +21,15 @@ const people = [
 ];
 // Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
 
+// a describe method that lists the name of the function OR naming of the particular test.
+describe("capName", () => {
+  // a test/it method, nested within the describe block, that in plain words, describes that the function does.
+  it("capName will capitalize the name and join the occupation and return the sentence in an array.", () => {
+    //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
+    expect(hello()).toEqual("hi");
+  });
+});
+
 // b) Create the function that makes the test pass.
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
@@ -32,14 +41,21 @@ const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false];
 const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true];
 // Expected output: [ 2, 1, -1 ]
 
+// a describe method that lists the name of the function OR naming of the particular test.
+describe("hello", () => {
+  // a test/it method, nested within the describe block, that in plain words, describes that the function does.
+  it("returns a string that says hi", () => {
+    //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
+    expect(hello()).toEqual("hi");
+  });
+});
+
+// b) Create the function that makes the test pass.
 a_string = "!1a2;b3c?";
 
 numeric_string = re.sub("[^0-9]", "", a_string);
 
 print(numeric_string);
-
-// b) Create the function that makes the test pass.
-
 // --------------------3) Create a function that takes in an array of numbers and returns the sum of all the numbers cubed.
 
 // a) Create a test with an expect statement using the variables provided.
@@ -49,4 +65,15 @@ const cubeAndSum1 = [2, 3, 4];
 const cubeAndSum2 = [0, 5, 10];
 // Expected output: 1125
 
+// a describe method that lists the name of the function OR naming of the particular test.
+
+describe("hello", () => {
+  // a test/it method, nested within the describe block, that in plain words, describes that the function does.
+  it("the sum of the array will be multiplied ", () => {
+    //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
+    expect(hello()).toEqual("hi");
+  });
+});
+
 // b) Create the function that makes the test pass.
+65284;
