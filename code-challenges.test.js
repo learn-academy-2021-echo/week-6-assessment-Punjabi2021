@@ -26,11 +26,25 @@ describe("capName", () => {
   // a test/it method, nested within the describe block, that in plain words, describes that the function does.
   it("capName will capitalize the name and join the occupation and return the sentence in an array.", () => {
     //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-    expect(hello()).toEqual("hi");
+    expect(
+      capName(string.charAt(0).toUpperCase() + string.slice(1).join)
+    ).toEqual("Ford Prefect is a hitchhiker.");
+    expect(
+      capName(string.charAt(0).toUpperCase() + string.slice(1).join)
+    ).toEqual("Zaphod Beeblebrox is president of the galaxy.");
+    expect(
+      capName(string.charAt(0).toUpperCase() + string.slice(1).join)
+    ).toEqual("Arthur Dent is a radio employee.");
   });
 });
 
 // b) Create the function that makes the test pass.
+
+function capitalizeFirstLetter(string) {
+  returncstring.charAt(0).toUpperCase() + string.slice(1).join;
+}
+
+console.log(capitalizeFirstLetter("foo")); // Foo
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
 
@@ -42,11 +56,12 @@ const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true];
 // Expected output: [ 2, 1, -1 ]
 
 // a describe method that lists the name of the function OR naming of the particular test.
-describe("hello", () => {
+describe("mixedData", () => {
   // a test/it method, nested within the describe block, that in plain words, describes that the function does.
-  it("returns a string that says hi", () => {
+  it("returns an array without the words", () => {
     //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-    expect(hello()).toEqual("hi");
+    expect(mixedData("[^0-9]", "", a_string)).toEqual([2, 0, -1, 0]);
+    expect(mixedData("[^0-9]", "", a_string)).toEqual([2, 1, -1]);
   });
 });
 
@@ -67,13 +82,16 @@ const cubeAndSum2 = [0, 5, 10];
 
 // a describe method that lists the name of the function OR naming of the particular test.
 
-describe("hello", () => {
+describe("cubed", () => {
   // a test/it method, nested within the describe block, that in plain words, describes that the function does.
   it("the sum of the array will be multiplied ", () => {
     //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-    expect(hello()).toEqual("hi");
+    expect(cubed()).toEqual([2, 3, 4]);
+    expect(cubed()).toEqual([2, 3, 4]);
   });
 });
 
 // b) Create the function that makes the test pass.
-65284;
+
+number.map((element) => element * element);
+console.log(square);
