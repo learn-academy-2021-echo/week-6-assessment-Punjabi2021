@@ -8,13 +8,13 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. As a developer, I am creating a Rails application with a model called Cohort that has_many students, but OOPS! I forgot to add the foreign key. How can I fix this mistake? What is the name of the foreign key? Would the foreign key be on the Cohort model or the Student model?
 
-Your answer: (modle . update) then insert the correct information
+Your answer: (model . update) then insert the correct information using db:migrate
 
 Researched answer:Running the db:migrate command also invokes the db:schema:dump command, which will update your db/schema.rb file to match the structure of your database.
 
 2. Which RESTful routes must always be passed params? Why?
 
-Your answer: RESTful routes provide mapping between HTTP verbs, controller actions, and CRUD operations in a database.
+Your answer:The show route is a get request. An exmaple in our book app would be to show a book and all information about that book. Another example is if you imagine IMDB, once you’ve clicked on a film you will see a lot of different information about a specific film, that would be that films show page.
 
 Researched answer:Calling the :create action to create a new article, passing in text for the title in params, as JSON request
 

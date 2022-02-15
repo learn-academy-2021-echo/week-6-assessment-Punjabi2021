@@ -26,15 +26,13 @@ describe("capName", () => {
   // a test/it method, nested within the describe block, that in plain words, describes that the function does.
   it("capName will capitalize the name and join the occupation and return the sentence in an array.", () => {
     //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-    expect(
-      capName(string.charAt(0).toUpperCase() + string.slice(1).join)
-    ).toEqual("Ford Prefect is a hitchhiker.");
-    expect(
-      capName(string.charAt(0).toUpperCase() + string.slice(1).join)
-    ).toEqual("Zaphod Beeblebrox is president of the galaxy.");
-    expect(
-      capName(string.charAt(0).toUpperCase() + string.slice(1).join)
-    ).toEqual("Arthur Dent is a radio employee.");
+    expect(people(capName)).toEqual("Ford Prefect is a hitchhiker.");
+
+    expect(people(capName)).toEqual(
+      "Zaphod Beeblebrox is president of the galaxy."
+    );
+
+    expect(people(capName)).toEqual("Arthur Dent is a radio employee.");
   });
 });
 
@@ -60,8 +58,8 @@ describe("mixedData", () => {
   // a test/it method, nested within the describe block, that in plain words, describes that the function does.
   it("returns an array without the words", () => {
     //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-    expect(mixedData("[^0-9]", "", a_string)).toEqual([2, 0, -1, 0]);
-    expect(mixedData("[^0-9]", "", a_string)).toEqual([2, 1, -1]);
+    expect(mixedData(hodgepodge1)).toEqual([2, 0, -1, 0]);
+    expect(mixedData(hodgepodge1)).toEqual([2, 1, -1]);
   });
 });
 
@@ -86,8 +84,8 @@ describe("cubed", () => {
   // a test/it method, nested within the describe block, that in plain words, describes that the function does.
   it("the sum of the array will be multiplied ", () => {
     //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-    expect(cubed()).toEqual([2, 3, 4]);
-    expect(cubed()).toEqual([2, 3, 4]);
+    expect(cubed(cubeAndSum1)).toEqual([2, 3, 4]);
+    expect(cubed(cubeAndSum1)).toEqual([0, 5, 10]);
   });
 });
 
