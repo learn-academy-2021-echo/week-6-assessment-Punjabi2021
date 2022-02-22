@@ -53,22 +53,21 @@ const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false];
 const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true];
 // Expected output: [ 2, 1, -1 ]
 
-// a describe method that lists the name of the function OR naming of the particular test.
-describe("mixedData", () => {
-  // a test/it method, nested within the describe block, that in plain words, describes that the function does.
-  it("returns an array without the words", () => {
-    //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-    expect(mixedData(hodgepodge1)).toEqual([2, 0, -1, 0]);
-    expect(mixedData(hodgepodge1)).toEqual([2, 1, -1]);
-  });
-});
+describe("mixData", () => {
+  it("mixData will drop the words in an array the name and only retun numbers.", () => {
+    const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false];
 
+    const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true];
+
+    expect(mixData(hodgepodge1)).toEqual("[ 2, 0, -1, 0 ]");
+    expect(mixData(hodgepodge2)).toEqual("[ 2, 1, -1 ]")
 // b) Create the function that makes the test pass.
-a_string = "!1a2;b3c?";
+const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false];
+// Expected output: [ 2, 0, -1, 0 ]
+const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true];
 
-numeric_string = re.sub("[^0-9]", "", a_string);
-
-print(numeric_string);
+mixData = re.sub("[^0-9]", "", a_string);
+console.log(result);
 // --------------------3) Create a function that takes in an array of numbers and returns the sum of all the numbers cubed.
 
 // a) Create a test with an expect statement using the variables provided.
@@ -90,6 +89,6 @@ describe("cubed", () => {
 });
 
 // b) Create the function that makes the test pass.
-
+function square(array) {
 number.map((element) => element * element);
 console.log(square);
