@@ -10,13 +10,13 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 Your answer: (model . update) then insert the correct information using db:migrate
 
-Researched answer:Running the db:migrate command also invokes the db:schema:dump command, which will update your db/schema.rb file to match the structure of your database.
+Researched answer: I would generate migration.add_column, then add specific information going into the column. The foreign key identifies the larger group that the student belongs to.The foreign key belongs to the student model. The name of the foreign key is cohort_id:.
 
 2. Which RESTful routes must always be passed params? Why?
 
 Your answer:The show route is a get request. An exmaple in our book app would be to show a book and all information about that book. Another example is if you imagine IMDB, once you’ve clicked on a film you will see a lot of different information about a specific film, that would be that films show page.
 
-Researched answer:Calling the :create action to create a new article, passing in text for the title in params, as JSON request
+Researched answer: delete update show, you need a pram(ID) to know the specific item to show update or delete.
 
 3. Name three rails generator commands. What is created by each?
 
